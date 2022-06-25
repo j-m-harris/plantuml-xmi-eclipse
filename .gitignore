@@ -18,9 +18,7 @@ target/
 build/
 
 # Eclipse Project files
-.settings/
-.classpath
-.project
+bin
 
 # for jenv users
 .java-version
