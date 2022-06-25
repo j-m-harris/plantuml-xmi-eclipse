@@ -1,0 +1,7 @@
+@startuml
+ParentA <|-- ChildA
+package api {
+  class Sample
+  ParentB <|-- ChildB
+}
+@enduml

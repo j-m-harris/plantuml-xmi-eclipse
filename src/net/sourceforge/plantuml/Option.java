@@ -139,6 +139,8 @@ public class Option {
 				setFileFormatOption(new FileFormatOption(FileFormat.XMI_ARGO));
 			} else if (s.equalsIgnoreCase("-txmi:star") || s.equalsIgnoreCase("-xmi:star")) {
 				setFileFormatOption(new FileFormatOption(FileFormat.XMI_STAR));
+			} else if (s.equalsIgnoreCase("-txmi:eclipse") || s.equalsIgnoreCase("-xmi:eclipse")) {
+				setFileFormatOption(new FileFormatOption(FileFormat.XMI_ECLIPSE));
 			} else if (s.equalsIgnoreCase("-teps") || s.equalsIgnoreCase("-eps")) {
 				setFileFormatOption(new FileFormatOption(FileFormat.EPS));
 			} else if (s.equalsIgnoreCase("-teps:text") || s.equalsIgnoreCase("-eps:text")) {
@@ -312,8 +314,7 @@ public class Option {
 				managePragma(s.substring(2));
 			} else if (s.equalsIgnoreCase("-testdot")) {
 				OptionPrint.printTestDot();
-			} else if (s.equalsIgnoreCase("-about") || s.equalsIgnoreCase("-author")
-					|| s.equalsIgnoreCase("-authors")) {
+			} else if (s.equalsIgnoreCase("-about") || s.equalsIgnoreCase("-author") || s.equalsIgnoreCase("-authors")) {
 				OptionPrint.printAbout();
 			} else if (s.equalsIgnoreCase("-help") || s.equalsIgnoreCase("-h") || s.equalsIgnoreCase("-?")) {
 				OptionPrint.printHelp();

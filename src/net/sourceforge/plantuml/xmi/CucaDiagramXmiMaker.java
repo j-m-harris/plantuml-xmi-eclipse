@@ -76,6 +76,8 @@ public final class CucaDiagramXmiMaker {
 				xmi = new XmiClassDiagramArgo((ClassDiagram) diagram);
 			} else if (fileFormat == FileFormat.XMI_STAR) {
 				xmi = new XmiClassDiagramStar((ClassDiagram) diagram);
+			} else if (fileFormat == FileFormat.XMI_ECLIPSE) {
+				xmi = new XmiClassDiagramEclipse((ClassDiagram) diagram);
 			} else {
 				throw new UnsupportedOperationException();
 			}
