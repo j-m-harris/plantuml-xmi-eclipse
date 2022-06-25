@@ -49,4 +49,11 @@ public class UniqueSequence {
 		return prefix + getValue();
 	}
 
+	/**
+	 * Reset sequence, useful for unit testing.
+	 */
+	public static void reset() {
+		cpt.set(1);
+	}
+
 }
